@@ -177,11 +177,11 @@ h1 {
 }
 
 .person {
-    min-height: 400px;
-    width: 400px;
+    max-height: 400px;
+    max-width: 400px;
     min-width: 300px;
     background: transparent;
-    margin: 5% 5%;
+    margin: 7.5% 5%;
     display: inline-block;
     overflow: hidden;
 }
@@ -244,14 +244,15 @@ h1 {
     padding: 10px;
     display: inline-block;
     text-align: center;
-    width: 400px;
+    max-width: 400px;
     margin: 2.5%;
 }
 
 .outreach {
     min-height: 100vh;
     background: #ffe100;
-    padding: 50px calc(30px + 10vw);
+    padding: 50px;
+    text-align: center;
 }
 
 .outreach h1 {
@@ -271,11 +272,11 @@ h1 {
 .post {
     padding: 40px;
     min-height: 550px;
-    width: 550px;
+    max-width: 550px;
     background: #000;
     color: #ffe100;
     border-radius: 60px;
-    margin: 3.25%;
+    margin: 5%;
     display: inline-block;
 }
 
@@ -290,7 +291,7 @@ h1 {
 
 .post div {
     height: 180px;
-    width: 320px;
+    max-width: 320px;
     background: #ffe100;
     position: relative;
     margin: 30px auto;
@@ -320,22 +321,30 @@ h1 {
 }
 
 .sponsor {
-    margin: 5%;
+    margin: 10% 5%;
+    border: 2px solid #ffe100;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .sponsor div {
-    position: relative;
     height: 300px;
     position: relative;
     background-repeat: no-repeat;
     margin: 20px auto;
-    background-attachment: cover;
+    background-attachment: contain;
     border: 6px solid #ffe100;
     padding: 5px;
 }
 
+@media only screen and (max-width: 800px) {
+    .sponsor div {
+        display: none;
+    }
+}
+
 .sponsor p {
-    margin: 
+    margin: 2%; 
 }
 
 .sponsor span {
