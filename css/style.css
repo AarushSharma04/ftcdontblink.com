@@ -177,14 +177,13 @@ h1 {
 }
 
 .person {
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 420px;
+    max-width: 420px;
     min-width: 300px;
     background: transparent;
-    margin: 7.5% 5%;
+    margin: 7.5%;
     display: inline-block;
     overflow: hidden;
-    padding: 5px;
 }
 
 .person h1 {
