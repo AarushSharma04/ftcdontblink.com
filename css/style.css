@@ -184,6 +184,7 @@ h1 {
     margin: 7.5% 5%;
     display: inline-block;
     overflow: hidden;
+    padding: 5px;
 }
 
 .person h1 {
